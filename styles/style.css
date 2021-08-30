@@ -1,0 +1,11 @@
+.main-bg-color{
+    background-color: #FF385C;
+}
+.gradient-text{
+    background: #70019C;
+background: -webkit-linear-gradient(to right, #70019C 0%, #AD0187 100%);
+background: -moz-linear-gradient(to right, #70019C 0%, #AD0187 100%);
+background: linear-gradient(to right, #70019C 0%, #AD0187 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
