@@ -1,11 +1,21 @@
-.main-bg-color{
-    background-color: #FF385C;
+@tailwind components;
+@layer components {
+  .filterButton {
+    @apply px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 duration-100 ease-out transform transition;
+  }
 }
-.gradient-text{
-    background: #70019C;
-background: -webkit-linear-gradient(to right, #70019C 0%, #AD0187 100%);
-background: -moz-linear-gradient(to right, #70019C 0%, #AD0187 100%);
-background: linear-gradient(to right, #70019C 0%, #AD0187 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
+.main-bg-color {
+  background-color: #ff385c;
+}
+.main-text-color {
+  color: #ff385c;
+}
+.gradient-text {
+  background: #70019c;
+  background: -webkit-linear-gradient(to right, #70019c 0%, #ad0187 100%);
+  background: -moz-linear-gradient(to right, #70019c 0%, #ad0187 100%);
+  background: linear-gradient(to right, #70019c 0%, #ad0187 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
