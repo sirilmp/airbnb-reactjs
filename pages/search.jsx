@@ -1,5 +1,6 @@
 import { format } from "date-fns";
 import { useRouter } from "next/dist/client/router";
+import Head from "next/head";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
@@ -16,6 +17,10 @@ function Search({ searchResult }) {
 
   return (
     <div>
+         <Head>
+        <title>Search</title>
+        <link rel="icon" href="/airbnb.png" />
+      </Head>
       <Header placeholder={`${location} | ${range} | ${numberOfGuests}`} />
       <main className="flex">
         <section className="flex-grow pt-14 pb-6 ml-4">
